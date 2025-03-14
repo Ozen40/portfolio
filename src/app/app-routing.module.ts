@@ -16,6 +16,11 @@ import { CommunicationComponent } from './hum/communication/communication.compon
 import { DocComponent } from './hum/doc/doc.component';
 import { AutonomieComponent } from './hum/autonomie/autonomie.component';
 import { GestionComponent } from './hum/gestion/gestion.component';
+import { OpenentComponent } from './real/openent/openent.component';
+import { GrandangleComponent } from './real/grandangle/grandangle.component';
+import { GeosaviorComponent } from './real/geosavior/geosavior.component';
+import { LinkntradeComponent } from './real/linkntrade/linkntrade.component';
+import { SpeedcleanComponent } from './real/speedclean/speedclean.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -32,7 +37,12 @@ const routes: Routes = [
   { path: 'doc', component: DocComponent },
   { path: 'autonomie', component: AutonomieComponent },
   { path: 'gestion', component: GestionComponent },
-  { path: 'projets', component: ProjetsComponent }
+  { path: 'projets', component: ProjetsComponent },
+  { path: 'openent', component: OpenentComponent },
+  { path: 'grandangle', component: GrandangleComponent },
+  { path: 'geosavior', component: GeosaviorComponent },
+  { path: 'linkntrade', component: LinkntradeComponent },
+  { path: 'speedclean', component: SpeedcleanComponent }
 ];
 
 @NgModule({

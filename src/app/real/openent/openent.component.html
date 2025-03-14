@@ -1,0 +1,162 @@
+<div class="container">
+
+    <h2>La présentation, la définition du projet ou de la réalisation</h2>
+    <p>
+        Le projet OpenENT est le projet que j’ai rejoint lors de mon stage dans l’entreprise CGI à Bordeaux.
+        Cette solution est utilisée aussi bien dans les écoles du premier degré (école maternelle et élémentaire) que
+        dans
+        les écoles du second degré (collèges et lycées) pour faciliter les échanges entre les membres de la communauté
+        éducative et développer les usages pédagogiques du numérique qui ont connu une croissance encore plus grande
+        depuis
+        la crise du Covid-19.
+        A l’heure actuelle, le projet possède plus de 2,5 millions d’utilisateurs étudiants et 5,8 millions
+        d’utilisateurs
+        en comptant les professeurs, les parents et les membres des équipes pédagogiques.
+        Les objectifs, le contexte, l’enjeu, les risques
+        Le projet est Open Source (licence libre) et disponible sur GitHub qui est une solution permettant de stocker le
+        code source d'un projet et de suivre l'historique complet de toutes les modifications apportées à ce code.
+        Un projet Open Source possède un code conçu pour être accessible au public ce qui veut dire que n'importe qui
+        peut
+        voir, modifier et distribuer le code à sa convenance.
+        Ce projet est un projet de type « Software as a Service » (SaaS) ou logiciel en tant que
+        service. Le projet s’articule autour de différents modules (services) qui peuvent fonctionner
+        indépendamment ou ensemble. Les principaux services sont :
+        ● les services métiers : cahiers de textes, espace de travail
+        ● les services de communication : messagerie, forum, blog, vidéoconférence
+        ● les services de vie scolaire : gestion des notes, de bulletins, d’absences
+        ● les services de diffusion de ressources numériques pédagogiques
+        ● les services pour le développement de contenus pédagogiques
+        L'architecture de microservices désigne un style d'architecture logiciel utilisé dans le développement
+        d'applications. Elle permet de décomposer une application volumineuse en composants indépendants, chaque élément
+        ayant ses propres responsabilités. Pour diffuser la requête d'un utilisateur, une application basée sur des
+        microservices peut appeler plusieurs microservices internes pour composer sa réponse.
+    </p>
+
+    <h2>Les étapes (ce que j’ai fait)</h2>
+    <p>
+        J’ai principalement travaillé sur le module “Support” qui est une application de gestion de tickets support
+        internes
+        à l'ENT avec une gestion de l'escalade vers un service tiers tel que Jira. L'application permet à un utilisateur
+        d'ouvrir et de suivre un ticket de support sur l'ENT. Un gestionnaire peut prendre en charge le ticket de
+        support,
+        le traiter ou l'escalader directement dans l'ENT. Le ticket est alors transféré vers un service tiers
+        automatiquement.
+        Page principale du module support
+        J’ai pour ma part, commencé en changeant le composant permettant l’importation de pièces jointes aux tickets
+        afin
+        d'harmoniser avec les fonctionnalités déjà présentes. En plus de cette amélioration, le changement de composant
+        a
+        également résolu un problème qui empêchait l'importation de pièces jointes trop lourdes.
+        Avant
+        Après
+        J’ai apporté d'autres ajustements pour renforcer cette fonctionnalité. Premièrement, j’ai fait en sorte de
+        désactiver le bouton d'importation de pièce jointe lors de l’envoi du ticket afin d'éviter tout problème lié à
+        des
+        fichiers volumineux.
+        Deuxièmement, j’ai empêché la suppression d'une pièce jointe lors de l'envoi du ticket, garantissant ainsi
+        l'intégrité des informations transmises. Enfin, j’ai ajouté une icône de chargement lors de l'envoi du ticket
+        afin
+        de montrer que son envoi est en cours.
+        J’ai développé une option de tri pour les administrateurs, leur permettant de visualiser uniquement leurs
+        propres
+        tickets, uniquement les tickets des autres utilisateurs, ou bien de consulter l'ensemble des tickets (à la fois
+        les
+        leurs et ceux des autres). Pour ce faire, j'ai mis en place un système de boutons à cocher/décocher,
+        fonctionnant de
+        manière similaire à une case à cocher. Si les deux boutons sont cochés, tous les tickets seront affichés. Sinon,
+        seuls les tickets correspondant au bouton coché seront affichés. Si je décoche l'un des boutons alors que
+        l'autre
+        est également décoché, celui sur lequel je n’ai pas cliqué sera automatiquement coché.
+        Boutons permettant le tri des tickets
+        La fonctionnalité dont je suis le plus fier est la possibilité d’exporter la liste des tickets pour les
+        administrateurs au format CSV (excel).
+        Cela fonctionne de deux manières différentes:
+        Si le nombre de tickets à exporter est inférieur à 1000, la liste sera directement téléchargée sur l’ordinateur
+        de
+        l’utilisateur.
+        Si le nombre de tickets dépasse les 1000, alors l’exportation se fera en arrière-plan afin de ne pas le bloquer
+        sur
+        la page. Lorsqu’elle est terminée, une notification est envoyée afin de le prévenir que le fichier est
+        disponible
+        dans son espace documentaire personnel.
+        Résultat de l’export des tickets en CSV
+    </p>
+
+    <h2>Les acteurs (les interactions)</h2>
+    <p>
+        Dans ce projet, j’ai été immergé au cœur d’une équipe de 40 personnes elle même divisé en plusieurs équipes.
+        L'équipe Product Owner (PO) est chargée de recueillir les besoins des clients et de les traduire en tâches
+        spécifiques pour les développeurs. Ils sont les intermédiaires entre les clients et l'équipe de développement,
+        s'assurant que les exigences sont clairement définies et que les fonctionnalités développées répondent aux
+        attentes.
+        L'équipe Support qui joue un rôle crucial dans la gestion des problèmes et des demandes des utilisateurs. Ils
+        sont
+        chargés de résoudre les problèmes techniques, de fournir une assistance et des conseils aux utilisateurs, et de
+        veiller à ce que l'application fonctionne de manière optimale.
+        L'équipe Infra est responsable de la mise en place et de la gestion des infrastructures informatiques
+        nécessaires au
+        bon fonctionnement de l'OpenENT. Ils s'occupent de la sécurité des systèmes, de la gestion des serveurs, du
+        déploiement de l'application et de la gestion des bases de données.
+        Et enfin l'équipe de développement qui est au cœur du processus de développement. Ils sont responsables de la
+        mise
+        en œuvre des fonctionnalités demandées par les clients, de l'écriture du code et des tests. Ils travaillent en
+        étroite collaboration avec les autres équipes pour s'assurer que les exigences soient satisfaites et que le
+        produit
+        final réponde aux attentes.
+    </p>
+
+    <h2>Les résultats (pour moi, pour l’entreprise).</h2>
+    <p>
+        Ma participation au projet à permis d’apporter de nombreuses améliorations au module “Support” car il avait été
+        délaissé par manque de main d'œuvre et par le fait qu’il était moins important que d’autres. J’ai donc pu
+        apporter
+        un regard nouveau sur ce module en proposant des améliorations sur l’UX et l’UI.
+        J’ai appris sur le développement grâce aux PR (envoi de code) qui sont vérifiées par les autres développeurs
+        avant
+        de rejoindre le projet principal car ils donnent des conseils et des retours sur ma production afin de pouvoir
+        m’améliorer. Il m’a également permis de mieux connaître le monde de l’open source ainsi que le respect de
+        certaines
+        normes qui sont utilisés dans de grands projets.
+    </p>
+
+    <h2>Les lendemains du projet : dans un futur immédiat, à distance, aujourd’hui</h2>
+    <p>
+        Ne faisant plus partie du projet, je ne connais pas exactement la situation actuelle de ce dernier. Cependant,
+        je
+        sais que de nouveaux modules étaient en cours d’étude en utilisant React. De nouveaux projets étaient également
+        en
+        cours de développement avec Druppal qui est un CMS open source utilisant PHP.
+        Juste avant mon départ, le projet avait déposé sa candidature afin d’être utilisé par l’école des douanes, celle
+        des
+        magistrats et par les centres de formation de l’armée.
+    </p>
+
+    <h2>
+        Mon regard critique (mes apports sur le Projet, ma valeur ajoutée, les enseignements que je retire de ce projet
+        ou
+        de cette réalisation).
+    </h2>
+    <p>
+        Ce projet m’a beaucoup appris car il a été ma première expérience dans le monde du travail dans l’informatique
+        en
+        participant réellement à des daily meeting ou des sprints reviews. Il m’a permis de remettre en question ce que
+        je
+        savais ainsi que mon niveau général en développement mais également de m’améliorer en étant tutoré par une
+        personne
+        inspirante et ayant un excellent niveau. J’ai appris comment fonctionnait le développement open source et les
+        normes
+        qu’il faut respecter pour contribuer à ce genre de projet comme par exemple la façon de nommer ses commit en
+        respectant la norme de nommage.
+        Convention pour donner un nom à un commit
+        J’ai appris à être sûr de ce que je dis en apportant tous les éléments de preuve que j’ai à ma disposition pour
+        prouver mes dires et à assumer et apprendre dans le cas où j’ai faux.
+        La prise de notes est également une chose qui m’a grandement impacté dans ce projet, car je ne prenais au début
+        aucune note de ce que l’on me disait, pensant pouvoir tout retenir, mais je me suis rendu compte que je
+        n’arrivais
+        pas à me souvenir de détails pourtant importants. J’ai donc maintenant pris l’habitude de prendre des notes ou
+        de
+        faire des schémas pour pouvoir retenir ce que l’on me dit et mettre au clair mes idées.
+    </p>
+
+
+</div>

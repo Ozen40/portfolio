@@ -19,6 +19,11 @@ import { CommunicationComponent } from './hum/communication/communication.compon
 import { DocComponent } from './hum/doc/doc.component';
 import { AutonomieComponent } from './hum/autonomie/autonomie.component';
 import { GestionComponent } from './hum/gestion/gestion.component';
+import { OpenentComponent } from './real/openent/openent.component';
+import { GrandangleComponent } from './real/grandangle/grandangle.component';
+import { GeosaviorComponent } from './real/geosavior/geosavior.component';
+import { LinkntradeComponent } from './real/linkntrade/linkntrade.component';
+import { SpeedcleanComponent } from './real/speedclean/speedclean.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +43,12 @@ import { GestionComponent } from './hum/gestion/gestion.component';
     CommunicationComponent,
     DocComponent,
     AutonomieComponent,
-    GestionComponent
+    GestionComponent,
+    OpenentComponent,
+    GrandangleComponent,
+    GeosaviorComponent,
+    LinkntradeComponent,
+    SpeedcleanComponent
   ],
   imports: [
     BrowserModule,

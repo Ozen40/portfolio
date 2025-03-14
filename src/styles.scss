@@ -1,6 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
+@import "styles/variables";
+
 body {
-  background-color: #181A1B;
+  background-color: $color-dark-bg;
   margin: 0
 }
 
@@ -9,7 +10,7 @@ body {
 * {
   // font-family: sans-serif;
   font-family: 'IBM Plex Mono', monospace;
-  color: white;
+  color: $color-dark-text;
 }
 
 a {
