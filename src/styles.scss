@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  background-color: #181A1B;
+  margin: 0
+}
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+  // font-family: sans-serif;
+  font-family: 'IBM Plex Mono', monospace;
+  color: white;
+}
+
+a {
+  cursor: pointer;
+}

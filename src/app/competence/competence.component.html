@@ -1,0 +1,17 @@
+<div class="timeline">
+    <div *ngFor="let competence of competences" class="container">
+        <div class="content" [routerLink]="competence.route">
+            <img src="assets/images/logo/{{competence.logo}}" width=" 100px">
+            <br>
+            <a><strong>{{ competence.nom }}</strong></a>
+
+            <div class="rating">
+                <span *ngFor="let star of [1, 2, 3, 4, 5]" (click)="setNote(competence, star)"
+                    [ngClass]="{'active': star <= competence.note}">
+                    &#9733;
+                </span>
+            </div>
+            <span>{{competence.type}}</span>
+        </div>
+    </div>
+</div>
