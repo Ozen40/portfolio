@@ -1,3 +1,15 @@
-$color-dark-bg: #181A1B;
-$color-dark-text: white;
-$color-other: #FF5733;
+:root {
+    --color-bg: white;
+    --color-text: black;
+    --color-card: white;
+
+    /* Couleurs fixes */
+    --color-title: white;
+    --color-other: #FF5733;
+}
+
+.dark-mode {
+    --color-bg: #181A1B;
+    --color-text: white;
+    --color-card: #222;
+}

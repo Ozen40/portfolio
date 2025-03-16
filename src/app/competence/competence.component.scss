@@ -26,8 +26,8 @@
 
 /* Boîtes de contenu */
 .content {
-    background: #222;
-    color: $color-dark-text;
+    background: var(--color-card);
+    color: var(--color-text);
     padding: 50px;
     border-radius: 8px;
     position: relative;
