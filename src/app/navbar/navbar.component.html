@@ -22,9 +22,23 @@
             <circle cx="4" cy="4" r="2" key="bt5ra8"></circle>
         </svg>
     </a>
-    <ul>
-        <a routerLink="projets">Projets🚀</a>
-        <a routerLink="competences">Compétences💡</a>
-        <a routerLink="contact">Contact📬</a>
+    <ul class="menu">
+        <li class="dropdown">
+            <a routerLink="projets">Projets🚀</a>
+            <ul class="dropdown-content">
+                <div *ngFor="let projet of projets">
+                    <li><a routerLink="{{projet.route}}">{{projet.nom}}</a></li>
+                </div>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a routerLink="competences">Compétences💡</a>
+            <ul class="dropdown-content">
+                <div *ngFor="let competence of competences">
+                    <li><a routerLink="{{competence.route}}">{{competence.nom}}</a></li>
+                </div>
+            </ul>
+        </li>
+        <li><a routerLink="contact">Contact📬</a></li>
     </ul>
 </nav>

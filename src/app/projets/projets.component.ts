@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./projets.component.scss']
 })
 export class ProjetsComponent {
-  competences = [
+  projets = [
     { nom: 'OpenENT', route: '/openent', note: 4, logo: 'logo_ent.png', type: 'Technique' },
     { nom: 'Grand Angle', route: '/grandangle', note: 4, logo: 'logo_gda.png', type: 'Technique' },
     { nom: 'Geosavior', route: '/geosavior', note: 4, logo: 'logo_geosavior.png', type: 'Technique' },

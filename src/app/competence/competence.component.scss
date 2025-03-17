@@ -7,6 +7,7 @@
     //margin: 50px auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* Conteneurs des événements */
@@ -41,10 +42,6 @@
 @media screen and (max-width: 768px) {
     .timeline::before {
         left: 20px;
-    }
-
-    .container {
-        width: 100%;
     }
 
     .left::before,

@@ -1,9 +1,9 @@
 <div class="timeline">
-    <div *ngFor="let competence of competences" class="container">
-        <div class="content" [routerLink]="competence.route">
-            <img src="assets/images/logo/{{competence.logo}}" width=" 100px">
+    <div *ngFor="let projet of projets" class="container">
+        <div class="content" [routerLink]="projet.route">
+            <img src="assets/images/logo/{{projet.logo}}" width=" 100px">
             <br>
-            <a><strong>{{ competence.nom }}</strong></a>
+            <a><strong>{{ projet.nom }}</strong></a>
         </div>
     </div>
 </div>
