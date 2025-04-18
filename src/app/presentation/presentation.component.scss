@@ -18,3 +18,14 @@ img {
 p {
     font-size: 18px;
 }
+
+button {
+    padding: 10px 20px;
+    background-color: var(--color-other);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
