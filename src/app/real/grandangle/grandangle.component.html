@@ -1,1 +1,143 @@
-<p>grandangle works!</p>
+<div class="container">
+    <h1>Grand Angle</h1>
+
+    <h2>La présentation, la définition du projet ou de la réalisation</h2>
+    <p>
+        Dans le cadre de mon Master à ESIEA, j’ai travaillé pendant deux ans en alternance en tant que développeur Full
+        Stack dans l’entreprise CGI à Bordeaux pour le projet Grand Angle.
+        <br> <br>
+        Le projet Grand Angle (GDA) est une solution de gestion financière conçue pour les collectivités locales. Elle
+        vise à moderniser et optimiser les systèmes d'information publics en intégrant divers modules adaptés aux
+        besoins spécifiques des collectivités.
+        L’application est composée de plusieurs modules qui peuvent être mis en place, selon les besoins de chaque
+        collectivité. Elle est connectée avec d’autres systèmes d’informations et applications métiers comme Trustpair
+        ou iParapheur afin d’assurer la conformité des données et assurer le bon fonctionnement avec les autres
+        applications utilisées.
+        <br> <br>
+        CGI accompagne également les collectivités dans la mise en œuvre de cette solution avec des services de conseil,
+        de formation et de support.
+        Grand Angle comptabilise à l’heure actuelle 70 collectivités locales différentes en tant que client.
+
+    </p>
+
+    <br>
+
+    <h2>Les objectifs, le contexte, l’enjeu, les risques</h2>
+    <p>
+        Lors de cette alternance, j’ai rejoint un projet mature avec plus de 25 ans d'existence et qui a su résister aux
+        différents changements et s'adapter aux nouvelles demandes des collectivités.
+        <br>
+        J’ai pu travailler avec de multiples technologies comme SQL et PL/SQL pour les bases de données, Java pour le
+        backend ou JSP et Angular pour le frontend.
+        <br>
+        Les missions que j’ai effectuées étaient diverses en effectuant de la correction d’anomalies aussi appelée TMA
+        (Tierce Maintenance Applicative), des évolutions pour ajouter de nouvelles fonctionnalités mais également des
+        connexions chez les clients pour réaliser des reprises de données.
+        <br>
+        En fonction du niveau de criticité de l’anomalie, je devais remonter le correctif sur la version du client mais
+        également sur les versions au-dessus pour que toutes les versions supérieures puissent en bénéficier.
+
+    </p>
+
+    <br>
+
+    <h2>Les étapes (ce que j’ai fait)</h2>
+    <p>
+        J’ai principalement travaillé sur deux modules, le module GED (Gestion Electronique des Documents) qui permet la
+        signature, le visa et la diffusion de documents et le module PARA (paramètre) qui s’occupe de la gestion de tous
+        les paramètres de l’application.
+        <br> <br>
+        <br>
+        Chaque évolution que j’ai réalisée suivait un processus bien précis afin de s’assurer de la qualité des
+        développements et du respect du cahier des charges.
+        <br>
+        Je devais d’abord réaliser un document appelé SFG (Spécifications Fonctionnelles Générales) qui est un document
+        expliquant en détail toutes les fonctionnalités qui vont être ajoutées avec des maquettes détaillées.
+        <br>
+        Je devais ensuite réaliser une SFD (Spécifications Fonctionnelles Détaillées) qui rassemblait tous les fichiers,
+        classes et méthodes que j’allais modifier afin de savoir si je partais dans la bonne direction et si je
+        n'oubliait rien.
+        <br>
+        Venait ensuite la partie des développements avec les tests unitaires qui devait couvrir et tester au moins 60%
+        du nouveau code.
+        <br> <br>
+        J’ai développé pour le module GED une évolution permettant de définir un type de pièce justificative pour le
+        bordereau de signature afin de le différencier des documents annexes renvoyés par le parapheur.
+        Le développement d’une évolution suit un processus bien précis afin de s’assurer de la qualité des
+        développements et du respect du cahier des charges.
+        <br><br>
+        J’ai d’abord rédigé un document appelé SFG (Spécifications Fonctionnelles Générales) qui est un document
+        expliquant en détaille les fonctionnalités de l’évolution avec des maquettes des écrans à modifier ou créer en
+        expliquant par exemple le type de champs ajouté, comment il est alimenté (règle d’alimentation), quand il est
+        affiché (règle d’affichage) et s’il est optionnel ou facultatif. Je renseigne également s’il y a des impacts sur
+        les interfaces comme les webservices et s’il y a une reprise de données à prévoir afin de s’assurer que les
+        données déjà existantes soient en corrélation avec les nouvelles données qui vont être rajoutées.
+        <br>
+        Dans mon cas, j’ai prévu un script de reprise pour paramétrer sur les types de pièces justificatives déjà
+        existantes, le même type pour le bordereau de signature que celui présent pour les documents annexes afin de ne
+        pas perturber le fonctionnement déjà présent chez les clients.
+        <br>
+        Une fois rédigé, j’ai dû faire valider ma SFG par un expert technique puis par un architecte fonctionnel (ARF)
+        pour s’assurer que je n'ai rien oublié dans le fonctionnement de l’évolution et des impacts qu’il pourrait y
+        avoir.
+        <br> <br>
+        Dès que la SFG est validée, je peux rédiger une SFD (Spécifications Fonctionnelles Détaillées) qui rassemble
+        tous les fichiers, classes et méthodes que je vais modifier afin de savoir si je part dans la bonne direction et
+        si je n’oublie rien.
+        <br> <br>
+        Une fois que ma SFD a été validée je peux commencer mon développement.
+        <br>
+        J’ai d’abord commencé avec la partie front avec Angular en ajoutant deux composants pour afficher des listes
+        déroulantes. Le premier permet de définir le type de PJ pour les documents annexes renvoyés par le parapheur et
+        le second permet de définir le type de PJ pour le bordereau de signature qui est renvoyé par le parapheur. J’ai
+        filtré les choix disponibles pour le type de PJ pour le bordereau de signature en n’affichant que ceux qui
+        acceptent le format de fichier PDF car le bordereau de signature est obligatoirement un PDF.
+        <br> <br>
+        Pour la partie back en Java, j’ai développé des solutions différentes en fonction des parapheurs pour récupérer
+        le bordereau de signature et lui attribuer sont type de PJ paramétré.
+    </p>
+
+    <br>
+
+    <h2>Les acteurs (les interactions)</h2>
+    <p>
+        J’ai pu interagir avec beaucoup de personnes dans le projet Grand Angle. J’ai pu dialoguer avec ma manager lors
+        de sprint review/planning mais également pour faire des points sur l’avancement de mes tâches sur le sprint en
+        cours. J’ai échangé avec les experts techniques et les architectes fonctionnels (ARF) lors des validations de
+        mes SFG mais également lorsque j’avais des questions fonctionnelles sur le développement et le fonctionnement de
+        l’application. Lors de stratégies de tests, j’ai pu planifier les différents cas de tests à faire pour tester
+        toutes les fonctionnalités de mes évolutions avec le plus de cas possible.
+    </p>
+
+    <br>
+
+    <h2>Les résultats (pour moi, pour l’entreprise).</h2>
+    <p>
+        Grâce à ce projet, j’ai appris comment fonctionnait un système de gestion électronique de documents mais
+        également le fonctionnement d’un parapheur.
+        J’ai pu grandement m’améliorer et apprendre sur beaucoup de technologies telles que Java, Angular ou encore
+        SQL/PLSQL.
+    </p>
+
+    <br>
+
+    <h2>Les lendemains du projet : dans un futur immédiat, à distance, aujourd’hui</h2>
+    <p>
+        L’application continue d’évoluer au fur et à mesure des livraisons des évolutions et des correctifs avec la
+        livraison de services pack toutes les deux semaines. La prochaine version “mineure” sera la version 8.8 de Grand
+        Angle qui est en cours de préparation avec une livraison prévue pour Septembre 2025.
+    </p>
+
+    <br>
+
+    <h2>
+        Mon regard critique (mes apports sur le Projet, ma valeur ajoutée, les enseignements que je retire de ce projet
+        ou de cette réalisation).
+    </h2>
+    <p>
+        J’ai également appris à travailler en suivant un processus très rigoureux avec plusieurs vérifications faites
+        par plusieurs personnes pour être sûr que la qualité du rendu final soit très bonne et avec le moins de bug
+        possible. J’ai découvert comment était géré un projet de grande envergure.
+    </p>
+
+</div>

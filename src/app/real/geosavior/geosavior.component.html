@@ -1,1 +1,99 @@
-<p>geosavior works!</p>
+<div class="container">
+    <h1>Geosavior</h1>
+
+    <h2>La présentation, la définition du projet ou de la réalisation</h2>
+    <p>
+        Lors de mon cinquième semestre à ESIEA, j’ai réalisé une application mobile Android du nom de Geosavior suite à
+        la demande de Madame Frédérique CHEYENNE, présidente de l’association Sibylline Océans. Elle avait pour objectif
+        de venir en aide aux animaux marins échoués ou blessés sur les plages en répondant à un questionnaire. À la
+        suite de ce dernier, l’utilisateur avait la possibilité en fonction de l’urgence d’appeler le centre spécialisé
+        le plus proche ou le SDIS (Service Départemental d'Incendie et de Secours). L’application comprenait également
+        une partie web permettant l’ajout d’animaux et de questions.
+    </p>
+
+    <br>
+
+    <h2>Les objectifs, le contexte, l’enjeu, les risques</h2>
+    <p>
+        L’objectif de cette application est de pouvoir signaler et sauver les animaux marins échoués sur les plages
+        française puis plus tard d’autres pays comme l’Espagne. Le but est de sauver le plus rapidement et le plus
+        efficacement les animaux en appelant le centre vétérinaire spécialisé le plus proche ou le SDIS en fonction de
+        l’urgence, car certains ne peuvent être manipulés que par eux.
+        <br>
+        Une des contraintes qui a été rencontrée lors du projet est la gestion de la perte du signal GPS car il est très
+        fréquent de ne plus avoir de signal lorsque l’on se rapproche des plages.
+    </p>
+
+    <br>
+
+    <h2>Les étapes (ce que j’ai fait)</h2>
+    <p>
+        Avant de commencer à travailler sur le code de l’application, j’ai d’abord réalisé des maquettes des différentes
+        parties de l’application afin de pouvoir créer quelque chose de cohérent entre toutes les pages.
+        <br> <br>
+        J’ai ensuite commencé le développement de la page d’accueil avec deux gros boutons, le premier pour voir le
+        tutoriel de l’application et le second pour signaler un animal.
+        <br>
+        Pour la page permettant de choisir l’animal à signaler, j’ai d’abord créé un “animal_item.xml” composé d’une
+        image (ImageView) et du nom de l’animal (TextView) qui représente l’animal à signaler. J’ai ensuite créé une
+        page qui utilise un recyclerView afin de faire une liste qui va utiliser mon item précédemment créé pour
+        afficher chaque animal.
+        <br> <br>
+        Je me suis ensuite occupé de la partie géolocalisation en récupérant les coordonnées latitudes et longitudes de
+        l’utilisateur en utilisant la position du téléphone pour pouvoir trouver le centre spécialisé le plus proche.
+        J’ai également fait en sorte de transformer ces coordonnées en adresse lisible par un humain afin que l’on
+        puisse la communiquer au SDIS.
+        <br>
+        J’ai également travaillé sur la partie administrateur en Angular afin de pouvoir permettre à notre commanditaire
+        de voir la liste des animaux présents dans l’application grâce à un tableau et de pouvoir trier ces derniers
+        ainsi qu’en ajouter de nouveaux.
+    </p>
+
+    <br>
+
+    <h2>Les acteurs (les interactions)</h2>
+    <p>
+        Lors de ce projet, l’équipe était composée de quatre camarades de classe ainsi que de moi-même. Notre
+        commanditaire était Madame Frédérique CHEYENNE, présidente de l’association Sibylline Océans. Elle était
+        accompagnée de Monsieur Cédric LEROY qui travaillait chez Gandi (hébergeur et registrar français). Je
+        participais à des réunions régulières pour montrer l’avancement du projet ainsi qu’avoir leurs avis sur notre
+        travail. La planification de ces réunions étaient difficiles de par leurs emplois du temps chargés.
+    </p>
+
+    <br>
+
+    <h2>Les résultats (pour moi, pour l’entreprise).</h2>
+    <p>
+        L'application a été terminée avec succès et le code source a été livré à Madame CHEYENNE ainsi qu'à Monsieur
+        LEROY. Ce projet m’a permis d’apprendre la réalisation d’une application Android mais également l’utilisation de
+        fonctionnalités natives comme la géolocalisation. J’ai pu m’améliorer sur Java car l’application a été réalisée
+        entièrement à l’aide de cette technologie et j’ai également pu apprendre à concevoir des interfaces claires et
+        simples d’utilisation sur un support mobile tout en m’adaptant aux différentes tailles d’écran des smartphones.
+    </p>
+
+    <br>
+
+    <h2>Les lendemains du projet : dans un futur immédiat, à distance, aujourd’hui</h2>
+    <p>
+        Lors de la réunion de livraison des livrables comprenant le code source et les documentations, il avait été
+        discuté de comment se déroulait la mise en ligne d’une application sur le Google Play Store pour Android avec
+        notamment la création d’un compte développeur nécessitant de payer 25 dollars de frais d’inscription. Il avait
+        également été discuté de la création de cette même application mais pour les téléphones IOS pour qu’elle soit
+        disponible pour tout le monde.
+    </p>
+
+    <br>
+
+    <h2>
+        Mon regard critique (mes apports sur le Projet, ma valeur ajoutée, les enseignements que je retire de ce projet
+        ou de cette réalisation).
+    </h2>
+    <p>
+        Ce projet m’a permis d’apprendre qu’il était important d’avoir des réunions régulières avec le commanditaire ou
+        le client afin de s’assurer d’être toujours dans la bonne direction et d’être sûr de sa satisfaction. J’ai pu
+        apporter mon aide en termes de design et d’UX/UI tout en m’améliorant sur la création d’interfaces pour mobile.
+        J’ai appris le développement mobile pour Android et l'utilisation des fonctionnalités natives comme la
+        géolocalisation.
+    </p>
+
+</div>

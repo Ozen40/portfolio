@@ -1,36 +1,52 @@
 <div class="container">
+    <h1>OpenENT</h1>
 
     <h2>La présentation, la définition du projet ou de la réalisation</h2>
     <p>
         Le projet OpenENT est le projet que j’ai rejoint lors de mon stage dans l’entreprise CGI à Bordeaux.
+        <br>
         Cette solution est utilisée aussi bien dans les écoles du premier degré (école maternelle et élémentaire) que
         dans
         les écoles du second degré (collèges et lycées) pour faciliter les échanges entre les membres de la communauté
         éducative et développer les usages pédagogiques du numérique qui ont connu une croissance encore plus grande
-        depuis
-        la crise du Covid-19.
+        depuis la crise du Covid-19.
+        <br>
         A l’heure actuelle, le projet possède plus de 2,5 millions d’utilisateurs étudiants et 5,8 millions
         d’utilisateurs
         en comptant les professeurs, les parents et les membres des équipes pédagogiques.
-        Les objectifs, le contexte, l’enjeu, les risques
+    </p>
+
+    <br>
+
+    <h2>Les objectifs, le contexte, l’enjeu, les risques</h2>
+    <p>
         Le projet est Open Source (licence libre) et disponible sur GitHub qui est une solution permettant de stocker le
         code source d'un projet et de suivre l'historique complet de toutes les modifications apportées à ce code.
+        <br>
         Un projet Open Source possède un code conçu pour être accessible au public ce qui veut dire que n'importe qui
         peut
         voir, modifier et distribuer le code à sa convenance.
         Ce projet est un projet de type « Software as a Service » (SaaS) ou logiciel en tant que
         service. Le projet s’articule autour de différents modules (services) qui peuvent fonctionner
         indépendamment ou ensemble. Les principaux services sont :
+        <br>
         ● les services métiers : cahiers de textes, espace de travail
+        <br>
         ● les services de communication : messagerie, forum, blog, vidéoconférence
+        <br>
         ● les services de vie scolaire : gestion des notes, de bulletins, d’absences
+        <br>
         ● les services de diffusion de ressources numériques pédagogiques
+        <br>
         ● les services pour le développement de contenus pédagogiques
+        <br> <br>
         L'architecture de microservices désigne un style d'architecture logiciel utilisé dans le développement
         d'applications. Elle permet de décomposer une application volumineuse en composants indépendants, chaque élément
         ayant ses propres responsabilités. Pour diffuser la requête d'un utilisateur, une application basée sur des
         microservices peut appeler plusieurs microservices internes pour composer sa réponse.
     </p>
+
+    <br>
 
     <h2>Les étapes (ce que j’ai fait)</h2>
     <p>
@@ -41,22 +57,32 @@
         support,
         le traiter ou l'escalader directement dans l'ENT. Le ticket est alors transféré vers un service tiers
         automatiquement.
+        <br> <br>
+        <img src="assets/images/openent_1.png">
+        <br> <br>
         Page principale du module support
         J’ai pour ma part, commencé en changeant le composant permettant l’importation de pièces jointes aux tickets
         afin
         d'harmoniser avec les fonctionnalités déjà présentes. En plus de cette amélioration, le changement de composant
         a
         également résolu un problème qui empêchait l'importation de pièces jointes trop lourdes.
-        Avant
-        Après
+        <br> <br>
+        <img src="assets/images/openent_2.png">
+        <em>Avant</em>
+        <br> <br>
+        <img src="assets/images/openent_3.png">
+        <em>Après</em>
+        <br><br>
         J’ai apporté d'autres ajustements pour renforcer cette fonctionnalité. Premièrement, j’ai fait en sorte de
         désactiver le bouton d'importation de pièce jointe lors de l’envoi du ticket afin d'éviter tout problème lié à
         des
         fichiers volumineux.
+        <br>
         Deuxièmement, j’ai empêché la suppression d'une pièce jointe lors de l'envoi du ticket, garantissant ainsi
         l'intégrité des informations transmises. Enfin, j’ai ajouté une icône de chargement lors de l'envoi du ticket
         afin
         de montrer que son envoi est en cours.
+        <br> <br>
         J’ai développé une option de tri pour les administrateurs, leur permettant de visualiser uniquement leurs
         propres
         tickets, uniquement les tickets des autres utilisateurs, ou bien de consulter l'ensemble des tickets (à la fois
@@ -67,36 +93,53 @@
         seuls les tickets correspondant au bouton coché seront affichés. Si je décoche l'un des boutons alors que
         l'autre
         est également décoché, celui sur lequel je n’ai pas cliqué sera automatiquement coché.
-        Boutons permettant le tri des tickets
+        <br> <br>
+        <img src="assets/images/openent_4.png">
+        <em>Boutons permettant le tri des tickets</em>
+        <br> <br>
         La fonctionnalité dont je suis le plus fier est la possibilité d’exporter la liste des tickets pour les
         administrateurs au format CSV (excel).
         Cela fonctionne de deux manières différentes:
-        Si le nombre de tickets à exporter est inférieur à 1000, la liste sera directement téléchargée sur l’ordinateur
-        de
-        l’utilisateur.
-        Si le nombre de tickets dépasse les 1000, alors l’exportation se fera en arrière-plan afin de ne pas le bloquer
+        <br>
+        ● Si le nombre de tickets à exporter est inférieur à 1000, la liste sera directement téléchargée sur
+        l’ordinateur
+        de l’utilisateur.
+        <br>
+        ● Si le nombre de tickets dépasse les 1000, alors l’exportation se fera en arrière-plan afin de ne pas le
+        bloquer
         sur
-        la page. Lorsqu’elle est terminée, une notification est envoyée afin de le prévenir que le fichier est
+        la page.
+        <br>
+        Lorsqu’elle est terminée, une notification est envoyée afin de le prévenir que le fichier est
         disponible
         dans son espace documentaire personnel.
-        Résultat de l’export des tickets en CSV
+        <br> <br>
+        <img src="assets/images/openent_5.png">
+        <br> <br>
+        <em>Résultat de l’export des tickets en CSV</em>
     </p>
+
+    <br>
 
     <h2>Les acteurs (les interactions)</h2>
     <p>
         Dans ce projet, j’ai été immergé au cœur d’une équipe de 40 personnes elle même divisé en plusieurs équipes.
+        <br> <br>
         L'équipe Product Owner (PO) est chargée de recueillir les besoins des clients et de les traduire en tâches
         spécifiques pour les développeurs. Ils sont les intermédiaires entre les clients et l'équipe de développement,
         s'assurant que les exigences sont clairement définies et que les fonctionnalités développées répondent aux
         attentes.
+        <br> <br>
         L'équipe Support qui joue un rôle crucial dans la gestion des problèmes et des demandes des utilisateurs. Ils
         sont
         chargés de résoudre les problèmes techniques, de fournir une assistance et des conseils aux utilisateurs, et de
         veiller à ce que l'application fonctionne de manière optimale.
+        <br> <br>
         L'équipe Infra est responsable de la mise en place et de la gestion des infrastructures informatiques
         nécessaires au
         bon fonctionnement de l'OpenENT. Ils s'occupent de la sécurité des systèmes, de la gestion des serveurs, du
         déploiement de l'application et de la gestion des bases de données.
+        <br> <br>
         Et enfin l'équipe de développement qui est au cœur du processus de développement. Ils sont responsables de la
         mise
         en œuvre des fonctionnalités demandées par les clients, de l'écriture du code et des tests. Ils travaillent en
@@ -105,12 +148,15 @@
         final réponde aux attentes.
     </p>
 
+    <br>
+
     <h2>Les résultats (pour moi, pour l’entreprise).</h2>
     <p>
         Ma participation au projet à permis d’apporter de nombreuses améliorations au module “Support” car il avait été
         délaissé par manque de main d'œuvre et par le fait qu’il était moins important que d’autres. J’ai donc pu
         apporter
         un regard nouveau sur ce module en proposant des améliorations sur l’UX et l’UI.
+        <br> <br>
         J’ai appris sur le développement grâce aux PR (envoi de code) qui sont vérifiées par les autres développeurs
         avant
         de rejoindre le projet principal car ils donnent des conseils et des retours sur ma production afin de pouvoir
@@ -118,6 +164,8 @@
         certaines
         normes qui sont utilisés dans de grands projets.
     </p>
+
+    <br>
 
     <h2>Les lendemains du projet : dans un futur immédiat, à distance, aujourd’hui</h2>
     <p>
@@ -130,6 +178,8 @@
         des
         magistrats et par les centres de formation de l’armée.
     </p>
+
+    <br>
 
     <h2>
         Mon regard critique (mes apports sur le Projet, ma valeur ajoutée, les enseignements que je retire de ce projet
@@ -157,6 +207,5 @@
         de
         faire des schémas pour pouvoir retenir ce que l’on me dit et mettre au clair mes idées.
     </p>
-
 
 </div>

@@ -1,1 +1,92 @@
-<p>linkntrade works!</p>
+<div class="container">
+    <h1>Link & Trade</h1>
+
+    <h2>La présentation, la définition du projet ou de la réalisation</h2>
+    <p>
+        Lors de mon quatrième semestre à l’ESIEA, j’ai réalisé un projet d’application web de vente entre élèves pour le
+        lycée de Borda à Dax. Son principe était de permettre la vente d’objets et de vêtements uniquement entre les
+        élèves et en ayant une vérification manuelle des annonces avant leurs publications.
+    </p>
+
+    <br>
+
+    <h2>Les objectifs, le contexte, l’enjeu, les risques</h2>
+    <p>
+        L’objectif de cette application est de permettre aux lycéens du lycée de Borda d’avoir une plateforme de vente
+        en ligne qui leur est réservée tout en ayant un lieu physique pour disposer leurs objets à vendre. Un des enjeux
+        majeurs est la vérification des annonces avant leurs publications afin de modérer le contenu proposé au public.
+        La contrainte majeure de ce projet a été de penser au responsive pour tous les écrans car l’application allait
+        être utilisée sur les smartphones des élèves pour la grande majorité.
+    </p>
+
+    <br>
+
+    <h2>Les étapes (ce que j’ai fait)</h2>
+    <p>
+        Je me suis principalement occupé de la partie boutique de l’application avec l’affichage des articles. J’ai
+        d’abord réalisé une maquette que j’ai proposée à mes camarades afin d’avoir une idée du rendu et de la mise en
+        page. Une fois validée, je suis parti sur une grille qui adapte le nombre d’éléments par ligne à la taille de
+        l’écran. Cela permet d’avoir un affichage confortable que l’on soit sur téléphone ou sur ordinateur.
+        <br> <br>
+        J’ai réalisé la barre de navigation qui comprend plusieurs éléments importants. Le premier est la barre de
+        recherche qui permet de rechercher un article par son nom. Le second est le bouton permettant de s’inscrire ou
+        de se connecter en fonction de si l’on a déjà un compte ou non. Si l’utilisateur a un compte, il pourra alors
+        accéder à la liste de ses articles mis en ligne. Le dernier élément est le bouton permettant de mettre en ligne
+        un article, si l'utilisateur n’est pas connecté à son compte, il est invité à se connecter ou à en créer un.
+        <br> <br>
+        Pour la partie back-end, je me suis occupé de créer les modèles des différents objets à manipuler, ces derniers
+        possèdent les mêmes attributs que leurs tables correspondantes dans la base de données afin d’avoir une
+        cohérence entre les données. Par exemple, le modèle qui va représenter un article possède un id, un nom, une
+        description, un prix, une catégorie et l’utilisateur qui l’a mis en ligne.
+        <br> <br>
+        J’ai implémenté une fonctionnalité permettant de générer un QR code qui redirige vers une annonce afin de
+        pouvoir la partager plus facilement. Pour ce faire, j’ai installé le package Node angularx-qrcode et créé un
+        composant dans lequel j’ai fait afficher le QR et rajouté un bouton permettant de le télécharger afin de pouvoir
+        en faire une affiche. Ce composant est affiché en pop-up lorsqu’un utilisateur clique sur le bouton partager
+        d’une annonce.
+
+    </p>
+
+    <br>
+
+    <h2>Les acteurs (les interactions)</h2>
+    <p>
+        Lors de ce projet, l’équipe était composée de trois camarades de classe ainsi que de moi-même. Nos
+        commanditaires étaient quatre lycéens accompagnés de leur professeure principale. Nous faisions des réunions
+        dans leur lycée tous les mois afin de montrer l’avancement du projet et avoir leurs avis.
+    </p>
+
+    <br>
+
+    <h2>Les résultats (pour moi, pour l’entreprise).</h2>
+    <p>
+        L'application a été terminée avec succès et le code source a été livré avec les différentes documentations
+        utilisateur, administrateur et technique. Il pourra donc être déployé sur le réseau du lycée afin d’être utilisé
+        par les lycéens en complément de leur lieu physique. Ce projet a été ma première expérience avec Angular pour la
+        partie front-end et Java pour la partie back-end.
+    </p>
+
+    <br>
+
+    <h2>Les lendemains du projet : dans un futur immédiat, à distance, aujourd’hui</h2>
+    <p>
+        Lors de la réunion de livraison des livrables comprenant le code source et les documentations, il avait été
+        discuté de comment se déroulait la mise en ligne de l’application au sein du lycée afin qu’il ne soit accessible
+        que par les élèves de dernier. La professeure du groupe avait fait la demande au chef de l’établissement afin
+        d’avoir l’autorisation de sa mise en ligne.
+    </p>
+
+    <br>
+
+    <h2>
+        Mon regard critique (mes apports sur le Projet, ma valeur ajoutée, les enseignements que je retire de ce projet
+        ou de cette réalisation).
+    </h2>
+    <p>
+        Ce projet m’a permis de bien apprendre Angular et Java, et m’a conforté dans l’idée que j’aimais autant le
+        front-end que le back-end ce qui m’a dirigé vers un apprentissage plus fullstack. J’ai également appris à bien
+        structurer une base de données et à bien séparer chaque modèle en différentes tables tout en utilisant des clés
+        étrangères pour garder la cohérence entre les données.
+    </p>
+
+</div>

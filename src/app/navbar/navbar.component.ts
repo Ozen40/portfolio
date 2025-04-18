@@ -10,7 +10,7 @@ export class NavbarComponent {
     { nom: 'OpenENT', route: '/openent' },
     { nom: 'Grand Angle', route: '/grandangle' },
     { nom: 'Geosavior', route: '/geosavior' },
-    { nom: 'LinkNTrade', route: '/linkntrade' },
+    { nom: 'Link & Trade', route: '/linkntrade' },
     { nom: 'Speedclean', route: '/speedclean' }
   ];
 
@@ -19,11 +19,11 @@ export class NavbarComponent {
     { nom: 'Java', route: '/java' },
     { nom: 'SQL', route: '/sql' },
     { nom: 'Git', route: '/git' },
-    { nom: 'TU', route: '/tu' },
+    { nom: 'Tests unitaires', route: '/tu' },
     { nom: 'UX/UI', route: '/ux' },
     { nom: 'Communication', route: '/communication' },
     { nom: 'Rédaction de documentation', route: '/doc' },
     { nom: 'Autonomie', route: '/autonomie' },
-    { nom: 'Gestion de projet', route: '/gestion' }
+    { nom: 'Méthode agile', route: '/gestion' }
   ];
 }
